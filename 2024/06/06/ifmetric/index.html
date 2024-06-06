@@ -16,22 +16,22 @@
   <meta name="author" content="JGQ12138">
   <meta name="keywords" content="">
   
-    <meta name="description" content="下载地址 ubuntu install12wget https:&#x2F;&#x2F;github.com&#x2F;emqx&#x2F;emqx&#x2F;releases&#x2F;download&#x2F;v5.0.3&#x2F;emqx-5.0.3-ubuntu18.04-amd64.debsudo apt install .&#x2F;emqx-5.0.3-ubuntu18.04-amd64.deb  启动1sudo systemctl start emqx.servic">
+    <meta name="description" content="metric 简介Linux 网络中通常用metric控制网络优先级，metric越小网络优先级越高，通常情况下系统默认双网卡metric都是0，这样我们就要人工干预，将某一个网卡的优先级metric值提高，来确保metric为0这个网卡的优先级 Install ifmetric1sudo apt install ifmetric  使用ifmetric调整网络优先级1sudo ifmetric">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux 安装mqtt">
-<meta property="og:url" content="https://jgq12138.github.io/2023/06/19/Linux_install_mqtt/index.html">
+<meta property="og:title" content="ifmetric 调整网络优先级">
+<meta property="og:url" content="https://jgq12138.github.io/2024/06/06/ifmetric/index.html">
 <meta property="og:site_name" content="star皆空">
-<meta property="og:description" content="下载地址 ubuntu install12wget https:&#x2F;&#x2F;github.com&#x2F;emqx&#x2F;emqx&#x2F;releases&#x2F;download&#x2F;v5.0.3&#x2F;emqx-5.0.3-ubuntu18.04-amd64.debsudo apt install .&#x2F;emqx-5.0.3-ubuntu18.04-amd64.deb  启动1sudo systemctl start emqx.servic">
+<meta property="og:description" content="metric 简介Linux 网络中通常用metric控制网络优先级，metric越小网络优先级越高，通常情况下系统默认双网卡metric都是0，这样我们就要人工干预，将某一个网卡的优先级metric值提高，来确保metric为0这个网卡的优先级 Install ifmetric1sudo apt install ifmetric  使用ifmetric调整网络优先级1sudo ifmetric">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-06-19T10:05:00.000Z">
-<meta property="article:modified_time" content="2024-05-30T01:30:40.840Z">
+<meta property="article:published_time" content="2024-06-06T02:24:02.000Z">
+<meta property="article:modified_time" content="2024-06-06T02:53:47.412Z">
 <meta property="article:author" content="JGQ12138">
 <meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Linux 安装mqtt - star皆空</title>
+  <title>ifmetric 调整网络优先级 - star皆空</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -209,7 +209,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Linux 安装mqtt"></span>
+            <span id="subtitle" data-typed-text="ifmetric 调整网络优先级"></span>
           
         </div>
 
@@ -220,8 +220,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-06-19 18:05" pubdate>
-          2023年6月19日 晚上
+        <time datetime="2024-06-06 10:24" pubdate>
+          2024年6月6日 上午
         </time>
       </span>
     
@@ -232,7 +232,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          46 字
+          158 字
         
       </span>
     
@@ -243,7 +243,7 @@
         
         
         
-          1 分钟
+          2 分钟
         
       </span>
     
@@ -280,20 +280,18 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Linux 安装mqtt</h1>
+            <h1 id="seo-header">ifmetric 调整网络优先级</h1>
             
             
               <div class="markdown-body">
                 
-                <p><a target="_blank" rel="noopener" href="https://github.com/emqx/emqx/releases">下载地址</a></p>
-<h2 id="ubuntu-install"><a href="#ubuntu-install" class="headerlink" title="ubuntu install"></a>ubuntu install</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">wget https://github.com/emqx/emqx/releases/download/v5.0.3/emqx-5.0.3-ubuntu18.04-amd64.deb<br>sudo apt install ./emqx-5.0.3-ubuntu18.04-amd64.deb<br></code></pre></td></tr></table></figure>
+                <h2 id="metric-简介"><a href="#metric-简介" class="headerlink" title="metric 简介"></a>metric 简介</h2><p>Linux 网络中通常用metric控制网络优先级，metric越小网络优先级越高，通常情况下系统默认双网卡metric都是0，这样我们就要人工干预，将某一个网卡的优先级metric值提高，来确保metric为0这个网卡的优先级</p>
+<h2 id="Install-ifmetric"><a href="#Install-ifmetric" class="headerlink" title="Install ifmetric"></a>Install ifmetric</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt install ifmetric<br></code></pre></td></tr></table></figure>
 
-<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo systemctl start emqx.service<br></code></pre></td></tr></table></figure>
+<h2 id="使用ifmetric调整网络优先级"><a href="#使用ifmetric调整网络优先级" class="headerlink" title="使用ifmetric调整网络优先级"></a>使用ifmetric调整网络优先级</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo ifmetric eth1 100<br></code></pre></td></tr></table></figure>
 
-<h2 id="查看状态"><a href="#查看状态" class="headerlink" title="查看状态"></a>查看状态</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo systemctl status emqx.service<br></code></pre></td></tr></table></figure>
-
-<h2 id="加入开机自启动"><a href="#加入开机自启动" class="headerlink" title="加入开机自启动"></a>加入开机自启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo systemctl <span class="hljs-built_in">enable</span> emqx.service<br></code></pre></td></tr></table></figure>
-
+<h2 id="使用route也可以调整网络优先级，不过使用route设备重启之后需要再次设置"><a href="#使用route也可以调整网络优先级，不过使用route设备重启之后需要再次设置" class="headerlink" title="使用route也可以调整网络优先级，不过使用route设备重启之后需要再次设置"></a>使用route也可以调整网络优先级，不过使用route设备重启之后需要再次设置</h2><p>这里需要注意的是route无法直接修改你已经添加好的路由优先级，需要删除重新添加</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo route add -host 192.168.0.111 gw 192.168.1.254 metric 0<br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -311,7 +309,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/" class="category-chain-item">工具安装</a>
+  <a href="/categories/Linux-%E5%91%BD%E4%BB%A4/" class="category-chain-item">Linux 命令</a>
   
   
 
@@ -338,8 +336,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Linux 安装mqtt</div>
-      <div>https://jgq12138.github.io/2023/06/19/Linux_install_mqtt/</div>
+      <div>ifmetric 调整网络优先级</div>
+      <div>https://jgq12138.github.io/2024/06/06/ifmetric/</div>
     </div>
     <div class="license-meta">
       
@@ -351,7 +349,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年6月19日</div>
+          <div>2024年6月6日</div>
         </div>
       
       
@@ -383,18 +381,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/06/19/Linux_install_mosquitto/" title="mosquitto编译安装使用">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">mosquitto编译安装使用</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/06/19/Linux_install_redis/" title="Linux 安装redis">
-                        <span class="hidden-mobile">Linux 安装redis</span>
+                      <a href="/2024/06/05/ubuntu22-04-install-nvidia-driver/" title="ubuntu22.04 安装显卡驱动">
+                        <span class="hidden-mobile">ubuntu22.04 安装显卡驱动</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
